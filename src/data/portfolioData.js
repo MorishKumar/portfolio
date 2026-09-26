@@ -1,3 +1,5 @@
+import profileImg from '../assets/profile.jpg';
+
 export const personalInfo = {
   name: "Morish Kumar",
   title: "Software Developer & Full-Stack Developer",
@@ -11,7 +13,7 @@ export const personalInfo = {
   linkedin: "https://linkedin.com/in/morishkumar",
   resumeUrl: "/Morish_Kumar_Resume.pdf",
   statusBadge: "Available for work!",
-  profileImage: "/profile.jpg"
+  profileImage: profileImg
 };
 
 export const aboutMe = {
