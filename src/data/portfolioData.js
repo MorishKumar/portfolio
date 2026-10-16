@@ -1,4 +1,5 @@
 import profileImg from '../assets/profile.jpg';
+import resumePdf from '../assets/Morish_Kumar_Resume.pdf';
 
 export const personalInfo = {
   name: "Morish Kumar",
@@ -11,7 +12,7 @@ export const personalInfo = {
   email: "morish.dtg@gmail.com",
   github: "https://github.com/morishkumar",
   linkedin: "https://linkedin.com/in/morishkumar",
-  resumeUrl: "/Morish_Kumar_Resume.pdf",
+  resumeUrl: resumePdf,
   statusBadge: "Available for work!",
   profileImage: profileImg
 };
@@ -188,22 +189,24 @@ export const projects = [
   },
   {
     id: "lms-portal",
-    title: "Learning Management System",
-    shortDescription: "Centralized student learning & course resource portal",
-    category: "React / Node",
-    technologies: ["React.js", "Bootstrap", "Node.js", "React Context"],
-    description: "A web-based learning management portal providing students access to courses, study materials, assignments, and educational resources.",
+    title: "Full MERN LMS Portal",
+    shortDescription: "Role-based LMS platform with Razorpay payments & video streaming",
+    category: "Full-Stack",
+    technologies: ["MongoDB", "Express.js", "React 19", "Node.js", "JWT", "Tailwind CSS", "Razorpay"],
+    description: "A production-grade Learning Management System featuring JWT authentication, Role-Based Access Control (Student, Instructor, Admin), course CRUD, Razorpay payments, Multer file/video uploads, search, and real-time student progress tracking.",
     features: [
-      "Interactive course browsing catalog",
-      "Study material access & document downloads",
-      "Assignment submission & resource hub",
-      "React Context-based global state management",
-      "Student dashboard with course overview"
+      "JWT Auth & Dual-Layer Role-Based Access Control (Student, Instructor, Admin)",
+      "Razorpay Test Mode Payments with HMAC-SHA256 signature verification",
+      "Course CRUD & Lesson Builder with video/thumbnail file uploads via Multer",
+      "Interactive Course Player with real-time video streaming & progress percentage bar",
+      "Search keyword regex matching, category filters, and server-side pagination",
+      "Express Validator schema checks & robust error middleware"
     ],
     techDetails: {
-      frontend: "React.js, Bootstrap",
-      backend: "Node.js",
-      stateManagement: "React Context"
+      frontend: "React 19, Tailwind CSS, React Router v7, Lucide Icons",
+      backend: "Node.js, Express.js, MongoDB (Mongoose), Multer, Razorpay SDK",
+      auth: "JWT Authentication & Role-Based Authorization Middleware",
+      payments: "Razorpay Test-Mode Checkout & HMAC Signature Verification"
     },
     liveUrl: "https://github.com/morishkumar",
     githubUrl: "https://github.com/morishkumar"

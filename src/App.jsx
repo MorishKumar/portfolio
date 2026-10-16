@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Preloader } from './components/Preloader';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
@@ -15,6 +15,15 @@ import { Footer } from './components/Footer';
 
 export default function App() {
   const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    document.documentElement.classList.remove('dark');
+    try {
+      localStorage.removeItem('theme');
+    } catch {
+      // ignore
+    }
+  }, []);
 
   return (
     <div className="min-h-screen bg-[#f5f5f7] dark:bg-slate-950 text-slate-800 dark:text-slate-100 selection:bg-stone-800 selection:text-white transition-colors duration-300">

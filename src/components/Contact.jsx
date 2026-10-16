@@ -136,6 +136,8 @@ export function Contact() {
                 <a
                   href={personalInfo.resumeUrl}
                   download="Morish_Kumar_Resume.pdf"
+                  target="_blank"
+                  rel="noreferrer"
                   className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 font-semibold text-xs transition-colors"
                 >
                   <Download size={14} />
