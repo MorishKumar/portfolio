@@ -11,7 +11,7 @@ export const personalInfo = {
   phone: "+91 9430782078",
   email: "morish.dtg@gmail.com",
   github: "https://github.com/morishkumar",
-  linkedin: "https://linkedin.com/in/morishkumar",
+  linkedin: "https://www.linkedin.com/in/morish-kumar/",
   resumeUrl: resumePdf,
   statusBadge: "Available for work!",
   profileImage: profileImg
